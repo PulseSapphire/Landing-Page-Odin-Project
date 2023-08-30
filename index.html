@@ -87,8 +87,17 @@
         height: 50px;
       }
 
+      .header nav {
+        display: flex;
+        gap: 40px;
+      }
+
       .hero {
         height: 290px;
+      }
+
+      .subContainer {
+        width: 40%;
       }
     </style>
   </head>
@@ -97,14 +106,14 @@
       <!-- header! -->
       <h2 class="header-logo-text">[Company name]</h2>
       <nav>
-        <a href="#" class="hero-secondary-text">headerItemA</a>
-        <a href="#" class="hero-secondary-text">headerItemB</a>
-        <a href="#" class="hero-secondary-text">headerItemC</a>
+        <a href="#" class="hero-secondary-text">navItemA</a>
+        <a href="#" class="hero-secondary-text">navItemB</a>
+        <a href="#" class="hero-secondary-text">navItemC</a>
       </nav>
     </div>
 
     <div class="hero container bg-dark">
-      <div>
+      <div class="subContainer">
         <h1 class="hero-text-main">Some header text here!</h1>
         <p class="hero-secondary-text">
           Some random sub text might be added here to describe something
