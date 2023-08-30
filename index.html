@@ -33,6 +33,10 @@
         background-color: white;
       }
 
+      .text-align-end {
+        text-align: end;
+      }
+
       .hero-text-main {
         font-size: 48px;
         font-weight: extra-bold;
@@ -72,8 +76,6 @@
 
       .quote-text {
         font-size: 36px;
-        font-weight: light;
-        font-style: italic;
       }
 
       .info-header-text,
@@ -90,6 +92,11 @@
 
         padding-right: 100px;
         padding-left: 100px;
+      }
+
+      .container-column {
+        flex-direction: column;
+        justify-content: space-evenly;
       }
 
       .header {
@@ -110,8 +117,6 @@
         height: 80%;
 
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         align-items: left;
       }
 
@@ -123,26 +128,18 @@
 
       .info {
         height: 250px;
-
-        flex-direction: column;
-        justify-content: space-evenly;
       }
 
       .infoSubContainer {
         width: 80%;
 
+        background-color: orange;
         display: flex;
         justify-content: space-between;
       }
 
-      .infoSubContainer div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
       .infoSubContainer p {
-        width: 55%;
+        width: 100px;
         font-size: 0.8rem;
         text-align: center;
       }
@@ -152,6 +149,15 @@
         height: auto;
 
         border-radius: 5px;
+      }
+
+      .quote {
+        height: 250px;
+      }
+
+
+      .quote p {
+        width: 80%;
       }
     </style>
   </head>
@@ -167,7 +173,7 @@
     </div>
 
     <div class="hero container bg-dark">
-      <div class="textContainer">
+      <div class="textContainer container-column">
         <h1 class="hero-text-main">Some header text here!</h1>
         <p class="hero-secondary-text">
           Some random sub text might be added here to describe something
@@ -181,40 +187,47 @@
       />
     </div>
 
-    <div class="info container bg-light">
+    <div class="info container container-column bg-light">
       <h2>Just a header element.</h2>
       <div class="infoSubContainer">
         <div>
           <img
             src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
           />
-          <p>Some placeholder text here maybe.</p>
+          <p>Some random text here maybe.</p>
         </div>
 
         <div>
           <img
             src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
           />
-          <p>Some placeholder text here maybe.</p>
+          <p>Some random text here maybe.</p>
         </div>
 
         <div>
           <img
             src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
           />
-          <p>Some placeholder text here maybe.</p>
+          <p>Some random text here maybe.</p>
         </div>
 
         <div>
           <img
             src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
           />
-          <p>Some placeholder text here maybe.</p>
+          <p>Some random text here maybe.</p>
         </div>
       </div>
     </div>
 
-    <div class="quote container bg-gray"></div>
+    <div class="quote container container-column bg-gray">
+        <p class="quote-text"><em>
+            "They may always ask who lives in a pineapple under the sea 
+            but not how they live in a pineapple under the sea."
+            </em>
+        </p>
+        <p class="text-align-end"><strong>- Someone Maybe?</strong></p>
+    </div>
 
     <div class="ctl container bg-light"></div>
 
