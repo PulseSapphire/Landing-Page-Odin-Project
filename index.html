@@ -88,8 +88,8 @@
         justify-content: space-between;
         align-items: center;
 
-        padding-right: 190px;
-        padding-left: 190px;
+        padding-right: 100px;
+        padding-left: 100px;
       }
 
       .header {
@@ -105,7 +105,7 @@
         height: 350px;
       }
 
-      .subContainer {
+      .textContainer {
         width: 50%;
         height: 80%;
 
@@ -119,6 +119,39 @@
         width: 40%;
         height: 55%;
         object-fit: cover;
+      }
+
+      .info {
+        height: 250px;
+
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .infoSubContainer {
+        width: 900px;
+
+        display: flex;
+        justify-content: space-between;
+
+
+        background-color: orange;
+      }
+
+      .infoSubContainer p {
+        width: 55%;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      .info img {
+        width: 55%;
+        height: auto;
+
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -134,7 +167,7 @@
     </div>
 
     <div class="hero container bg-dark">
-      <div class="subContainer">
+      <div class="textContainer">
         <h1 class="hero-text-main">Some header text here!</h1>
         <p class="hero-secondary-text">
           Some random sub text might be added here to describe something
@@ -149,46 +182,35 @@
     </div>
 
     <div class="info container bg-light">
-      <h2>Some random information might be added here or maybe not.</h2>
+      <h2>Just a header element.</h2>
+      <div class="infoSubContainer">
+        <div>
+          <img
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
+          />
+          <p>Some placeholder text here maybe.</p>
+        </div>
 
-      <div>
-        <img
-          src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
-        />
-        <p>
-          Some random text might be added here to describe the image above
-          perhaps or maybe not.
-        </p>
-      </div>
+        <div>
+          <img
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
+          />
+          <p>Some placeholder text here maybe.</p>
+        </div>
 
-      <div>
-        <img
-          src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
-        />
-        <p>
-          Some random text might be added here to describe the image above
-          perhaps or maybe not.
-        </p>
-      </div>
+        <div>
+          <img
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
+          />
+          <p>Some placeholder text here maybe.</p>
+        </div>
 
-      <div>
-        <img
-          src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
-        />
-        <p>
-          Some random text might be added here to describe the image above
-          perhaps or maybe not.
-        </p>
-      </div>
-
-      <div>
-        <img
-          src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
-        />
-        <p>
-          Some random text might be added here to describe the image above
-          perhaps or maybe not.
-        </p>
+        <div>
+          <img
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2021/03/Homemade-Dried-Bacon-500x500.png"
+          />
+          <p>Some placeholder text here maybe.</p>
+        </div>
       </div>
     </div>
 
