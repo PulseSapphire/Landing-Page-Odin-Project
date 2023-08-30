@@ -69,6 +69,10 @@
         border-radius: 5px;
       }
 
+      .btn-border {
+        border: 1px solid rgb(255, 255, 255);
+      }
+
       .info-header-text {
         font-size: 36px;
         font-weight: extra-bold;
@@ -133,7 +137,6 @@
       .infoSubContainer {
         width: 80%;
 
-        background-color: orange;
         display: flex;
         justify-content: space-between;
       }
@@ -158,6 +161,24 @@
 
       .quote p {
         width: 80%;
+      }
+
+      .ctl {
+        height: 200px;
+      }
+
+      .ctl_subContainer {
+        width: 100%;
+
+        background-color: #3882f6;
+
+        padding: 20px;
+
+        color: white;
+
+        display: flex;
+
+        justify-content: space-around;
       }
     </style>
   </head>
@@ -229,7 +250,15 @@
         <p class="text-align-end"><strong>- Someone Maybe?</strong></p>
     </div>
 
-    <div class="ctl container bg-light"></div>
+    <div class="ctl container bg-light">
+        <div class="ctl_subContainer">
+            <div>
+            <h2>Some random text.</h2>
+            <p>Even more random text being added in this paragraph tag here.</p>
+</div>
+<button class="btn btn-border">Sign up</button>
+        </div>
+    </div>
 
     <div class="footer container bg-dark"></div>
   </body>
